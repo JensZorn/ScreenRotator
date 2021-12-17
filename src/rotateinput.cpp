@@ -153,7 +153,7 @@ void RotateInput::rotate(Orientation orientation)
   static QHash<Orientation, QStringList>  orientation_matrix_map {
     {TopUp, {"1", "0", "0", "0", "1", "0", "0", "0", "1"}},
     {TopDown, {"-1", "0", "1", "0", "-1", "1", "0", "0", "1"}},
-    {LeftUp, {"0", "-1", "1", "1", "0", "0", "0", "0", "1"}},
+    {LeftUp, {"0", "0", "0", "0", "0", "0", "0", "0", "0"}},
     {RightUp, {"0", "1", "0", "-1", "0", "1", "0", "0", "1"}},
   };
   auto orientation_matrix = orientation_matrix_map[orientation];
@@ -164,7 +164,7 @@ void RotateInput::rotate(Orientation orientation)
   static QHash<Orientation, vector<float>>  orientation_matrix_map {
     {TopUp, {1, 0, 0, 0, 1, 0, 0, 0, 1}},
     {TopDown, {-1, 0, 1, 0, -1, 1, 0, 0, 1}},
-    {LeftUp, {0, -1, 1, 1, 0, 0, 0, 0, 1}},
+    {LeftUp, {0, 0, 0, 0, 0, 0, 0, 0, 0}},
     {RightUp, {0, 1, 0, -1, 0, 1, 0, 0, 1}},
   };
   auto orientation_matrix = orientation_matrix_map[orientation];
