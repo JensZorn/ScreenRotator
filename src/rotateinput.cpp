@@ -169,10 +169,10 @@ void RotateInput::rotate(Orientation orientation)
   };
   auto orientation_matrix = orientation_matrix_map[orientation];
   static QHash<Orientation, vector<float>>  orientation_matrixtouchpad_map {
-    {TopUp, {1, 0, 0, 0, 1, 0, 0, 0, 1}},
-    {TopDown, {-1, 0, 1, 0, -1, 1, 0, 0, 1}},
+    {TopUp, {0, 0, 0, 0, 0, 0, 0, 0, 0}},
+    {TopDown, {0, 0, 0, 0, 0, 0, 0, 0, 0}},
     {LeftUp, {0, 0, 0, 0, 0, 0, 0, 0, 0}},
-    {RightUp, {0, 1, 0, -1, 0, 1, 0, 0, 1}},
+    {RightUp, {0, 0, 0, 0, 0, 0, 0, 0, 0}},
   };
   auto orientation_matrixtouchpad = orientation_matrixtouchpad_map[orientation];
   qDebug() << "Setting rotation matrix: " << orientation_matrix;
