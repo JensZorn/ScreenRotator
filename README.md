@@ -1,3 +1,5 @@
+Fork to adjust the transformation matrix for my ASUS T100ha Laptop.
+
 # Simple Qt screen rotation manager
 
 Reads from accelerometer sensors, and rotate display according to the readings.
